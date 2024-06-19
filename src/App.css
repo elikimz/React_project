@@ -36,7 +36,7 @@ padding: 2rem;
   padding: 2rem;
   background-color: azure;
   width: 200px;
-  height: 400px;
+  height: 100px;
 
  }
 
@@ -67,6 +67,8 @@ padding: 2rem;
   justify-content: space-between; 
   gap: 20px; 
   align-content: center;
+  overflow: auto;
+ 
  
 }
  h1{
