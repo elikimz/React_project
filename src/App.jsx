@@ -12,7 +12,7 @@ function App() {
  const age =25
  const age2 =22
  const age3 =24
-
+ 
 
   return (
   <>
@@ -20,7 +20,7 @@ function App() {
   <div class="container"> 
 <div className='one-column'>
   <Placeholder w={100} h={100}/>
-  <Personal name={name} age={age} bio={bio}/>
+  <Personal  name={name} age={age} bio={bio}/>
   </div>
 <div className='two-column'>
   <Placeholder w={100} h={100}/>
