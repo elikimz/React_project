@@ -1,34 +1,37 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
 
+import './App.css'
+import Personal from './components/personal'
+import Placeholder from './components/placeholder'
 function App() {
-  const [count, setCount] = useState(0)
+  const name = "kimani"
+  const bio="Passionate developer."
+  const bio1="Robotics engineer designing and programming."
+  const bio2="Blockchain expert developing decentralized applications."
+  const name2 = "Faith"
+  const name3 = "Samuel"
+ const age =25
+ const age2 =22
+ const age3 =24
+
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+  <>
+  <h1>Profile_Cards</h1>
+  <div class="container"> 
+<div className='one-column'>
+  <Placeholder w={100} h={100}/>
+  <Personal name={name} age={age} bio={bio}/>
+  </div>
+<div className='two-column'>
+  <Placeholder w={100} h={100}/>
+  <Personal name={name2} age={age2} bio={bio1}/>
+  </div>
+  <div className='three-column'>
+  <Placeholder w={100} h={100}/>
+  <Personal name={name3} age={age3} bio={bio2}/>
+</div>
+</div>
+  </>
   )
 }
 
